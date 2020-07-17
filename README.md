@@ -1,23 +1,79 @@
 <p align="center">
-  <a href="http://juzi214032.github.io/groovy-chinese" target="_blank">
-    <img width="360" src="https://github.com/juzi214032/groovy-chinese/raw/master/docs/.vuepress/public/groovy-logo-blue.png" alt="logo">
+  <a href="" target="_blank">
+    <img width="200" src="https://img.juzibiji.top/20200715191757.png" alt="logo">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/juzi214032/oerp/actions">
+    <img src="https://github.com/juzi214032/oerp/workflows/Java%20CI%20with%20Maven/badge.svg" alt="Github Action">
+  </a>
+  <a href="https://spring.io/">
+    <img src="https://img.shields.io/badge/Spring%20Boot-2.3.0.RELEASE-brightgreen" alt="Spring Boot">
+  </a>
+  <a href="https://mp.baomidou.com/">
+    <img src="https://img.shields.io/badge/MyBatis%20Plus-3.3.2-blue" alt="MyBatis Plus">
+  </a>
+  <a href="https://en.wikipedia.org/wiki/MIT_License">
+  <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="LISENCE" >
   </a>
 </p>
 
 ## 介绍
 
-[开始阅读](http://juzi214032.github.io/groovy-chinese)
+OERP 是 Online Examination Registration Platform 的缩写，中文名称为：**在线考试报名平台**。
 
-该项目是 Groovy 官方文档的中文翻译，翻译正在进行中……
+该仓库是 OERP 服务端代码仓库，使用 SpringBoot + Mybatis Plus + MySQL 实现。
 
-因个人兴趣原因打算学习一下 Groovy，但官方文档是英文的，学习起来还是较慢。想着反正都得看一遍，就顺带做个文档，也方便后来的其他同学快速学习。
+## 开发环境
 
-> 由于本人的英语并不算好，如果您对文档有任何异议都欢迎提交 Pull Request 进行修正。
+- Java 8 及以上
+- IDEA 2020.1
+- **IDEA 需要安装插件 [Lombok](https://plugins.jetbrains.com/plugin/index?xmlId=Lombook%20Plugin)**
 
-## 贡献
+## 快速开始
 
-如果在阅读过程中发现有错误的地方，欢迎提交 Pull Request 对文档进行修正。
+- 在你的数据库中新建一个名为`oerp`的数据库
 
-## 协议
+- 导入仓库目录`/src/main/resources/oerp.sql`的 SQL 文件
 
-[MIT](LICENSE) © 2020  桔子
+- 修改`/src/main/resources/application.yml`中的`spring.datasource`配置为你自己的数据库信息
+
+- 在 **IDEA** 或 Eclipse 中启动项目
+
+- 访问网址 [http://localhost:8080/api/v1](http://localhost:8080/api/v1)，看到如下文字代表系统启动成功：
+
+  ![启动成功截图](https://img.juzibiji.top/20200716111640.png)
+
+## 目录结构
+
+```
+|-- src
+    |-- main
+        |-- java
+        |   |-- com.juzi.oerp
+        |       |-- OerpApplication.java   -> SpringBoot 启动类
+        |       |-- common                 -> 项目通用类
+        |       |   |-- constant           -> 常量
+        |       |   |-- exception          -> 自定义异常
+        |       |   |-- interceptor        -> 拦截器（身份认证、权限拦截）
+        |       |   |-- jackson            -> Jackson 相关
+        |       |-- config                 -> 系统配置
+        |       |-- controller             -> 系统 API 接口
+        |       |-- dao                    -> 自定义 DAO 层接口（主要做多表查询）
+        |       |-- mapper                 -> MyBatis Plus Generator 生成的 DAO 接口（主要做单表 CRUD）
+        |       |-- model                  -> Java POJO
+        |       |   |-- dto                -> 数据传输对象（主要用在 Controller 与 Service 层之间）
+        |       |   |-- po                 -> 持久层对象（和数据库表一一对应，用在 DAO 层）
+        |       |   |-- vo                 -> 视图层对象（作为 Controller 的返回值）
+        |       |-- service                -> 服务层
+        |       |-- util                   -> 通用工具类（JWT Token 生成等）
+        |-- resources
+            |-- application.yml            -> Spring Boot 配置文件
+            |-- banner.txt
+            |-- oerp.sql                   -> 数据库 SQL 文件（数据库名为 oerp）
+            |-- mybatis
+                |-- xml
+                    |-- dao                -> 自定义 Mybatis Xml
+                    |-- mapper             -> MyBatis Plus Generator 生成的 MyBatis Xml
+```
