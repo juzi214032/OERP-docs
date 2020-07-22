@@ -1,5 +1,5 @@
 module.exports = {
-  base: "/oerp-docs/",
+  base: "/OERP-docs/",
   dest: "./dist",
   title: "OERP",
   description: "OERP 文档",
