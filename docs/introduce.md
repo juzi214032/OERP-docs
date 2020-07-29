@@ -16,4 +16,40 @@ OERP 是 *Online Examination Registration Platform* 的缩写
 
 用户报名之后，管理员可对用户的报名信息进行人工管理与干预（如删除某人的报名信息等）。
 
-同时管理端也提供了常用的数据管理、图标分析、导出 Excel等实用功能。
+同时管理端也提供了常用的数据管理、图表分析、导出 Excel等实用功能。
+
+## 资料下载
+
+- Axure 原型：[点击下载](http://juzi214032.github.com/OERP-docs/assets/OERP%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1.rp)
+- Adobe XD UI 设计稿：[点击下载](http%3A%2F%2Fjuzi214032.github.com%2FOERP-docs%2Fassets%2FOERP-UI%20%E8%AE%BE%E8%AE%A1%E7%A8%BF.xd)
+
+## 项目截图
+### 用户端
+
+#### 首页
+
+![](https://img.juzibiji.top/20200729112009.png)
+
+![](https://img.juzibiji.top/20200729112454.png)
+
+![](https://img.juzibiji.top/20200729113944.png)
+
+#### 个人中心
+
+![](https://img.juzibiji.top/20200729113345.png)
+
+![](https://img.juzibiji.top/20200729113412.png) 
+
+#### 登录
+
+![](https://img.juzibiji.top/20200729113558.png)
+
+![](https://img.juzibiji.top/20200729113559.png)
+
+#### 考试报名
+
+![](https://img.juzibiji.top/20200729114009.png)
+
+![](https://img.juzibiji.top/20200729114030.png)
+
+![](https://img.juzibiji.top/20200729114041.png)
