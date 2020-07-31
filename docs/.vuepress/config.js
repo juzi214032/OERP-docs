@@ -9,11 +9,11 @@ module.exports = {
       content: "OERP,oerp,OERP 在线考试报名平台,OERP在线考试报名平台"
     }]
   ],
+  plugins: ['vuepress-plugin-medium-zoom'],
   themeConfig: {
     smoothScroll: true,
     docsDir: 'docs',
     editLinks: true,
-    smoothScroll: false,
     repoLabel: 'Github',
     editLinkText: '纠正错误',
     repo: "juzi214032/OERP",
