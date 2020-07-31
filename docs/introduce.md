@@ -24,6 +24,7 @@ OERP 是 *Online Examination Registration Platform* 的缩写
 
 ## 资料下载
 
+- 需求文档：[点击下载](http://juzi214032.github.com/OERP-docs/assets/OERP%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3V1.0.docx)
 - Axure 原型：[点击下载](http://juzi214032.github.com/OERP-docs/assets/OERP%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1.rp)
 - Adobe XD UI 设计稿：[点击下载](http%3A%2F%2Fjuzi214032.github.com%2FOERP-docs%2Fassets%2FOERP-UI%20%E8%AE%BE%E8%AE%A1%E7%A8%BF.xd)
 
