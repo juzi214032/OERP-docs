@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 ## 系统介绍
 
 ### OERP 是什么
@@ -53,3 +57,20 @@ OERP 是 *Online Examination Registration Platform* 的缩写
 ![](https://img.juzibiji.top/20200729114030.png)
 
 ![](https://img.juzibiji.top/20200729114041.png)
+
+### 管理端
+#### 登录界面
+![](https://img.juzibiji.top/20200731201708.png)
+
+#### 数据分析
+![](https://img.juzibiji.top/20200731201707.png)
+
+#### 考生报名管理
+![](https://img.juzibiji.top/20200731201706.png)
+
+#### 考试管理
+![](https://img.juzibiji.top/20200731201705.png)
+
+#### 用户管理
+![](https://img.juzibiji.top/20200731201704.png)
+![](https://img.juzibiji.top/20200731201709.png)

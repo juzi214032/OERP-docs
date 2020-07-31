@@ -10,6 +10,7 @@ module.exports = {
     }]
   ],
   themeConfig: {
+    smoothScroll: true,
     docsDir: 'docs',
     editLinks: true,
     smoothScroll: false,
