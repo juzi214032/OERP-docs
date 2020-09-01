@@ -16,6 +16,6 @@
     "vuepress": "^1.5.4"
   },
   "dependencies": {
-    "vuepress-plugin-medium-zoom": "^1.1.8"
+    "vuepress-plugin-medium-zoom": "^1.1.9"
   }
 }
