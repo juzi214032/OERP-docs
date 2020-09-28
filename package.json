@@ -13,7 +13,7 @@
   "author": "桔子",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.5.4"
+    "vuepress": "^1.6.0"
   },
   "dependencies": {
     "vuepress-plugin-medium-zoom": "^1.1.9"
